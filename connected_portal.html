@@ -685,7 +685,7 @@ function handleFeedLoad() {
 
 async function pollLiveFeedStatus() {
   try {
-    const res = await fetch("localhost:5000");
+    const res = await fetch("https://hackathon-r591.onrender.com/current_status?app_number="+currentAppNumber,{signal:AbortSignal.timeout(2000)});
     const d = await res.json();
     const el = document.getElementById("liveFeedCandidate");
     if (d.student_name && d.student_name !== "Unknown") {

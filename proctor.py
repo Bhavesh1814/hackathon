@@ -40,7 +40,7 @@ from flask_cors import CORS
 # ─────────────────────────────────────────
 #  CONFIG
 # ─────────────────────────────────────────
-FLASK_API   = "http://localhost:5000"          # main Flask backend
+FLASK_API   = "https://hackathon-r591.onrender.com/"          # main Flask backend
 APPWRITE    = {
     "endpoint":   "https://fra.cloud.appwrite.io/v1",
     "project_id": "69a1413700343030d7f6",
